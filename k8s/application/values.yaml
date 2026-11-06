@@ -9,6 +9,8 @@ gateway:
     repository: 637423245256.dkr.ecr.ap-south-1.amazonaws.com/demo/gateway
     tag: "v1.0.0"
     pullPolicy: IfNotPresent
+  imagePullSecrets:
+    - name: ecr-secret
   service:
     type: LoadBalancer
     port: 80
@@ -20,6 +22,8 @@ products:
     repository: 637423245256.dkr.ecr.ap-south-1.amazonaws.com/demo/product
     tag: "v1.0.0"
     pullPolicy: IfNotPresent
+  imagePullSecrets:
+    - name: ecr-secret
   service:
     port: 8001
   resources: {}
