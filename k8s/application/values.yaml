@@ -2,7 +2,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 gateway:
-  replicaCount: 2
+  replicaCount: 1
   image:
     repository: 637423245256.dkr.ecr.ap-south-1.amazonaws.com/demo/gateway
     tag: "v1.0.0"
